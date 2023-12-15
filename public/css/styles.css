@@ -30,12 +30,14 @@ span{
 .container{
     background-color: var(--very-dark-blue);
     padding: 4rem 1rem;
+    display: grid;
+    gap: 1.5rem;
 }
 .header{
     background-color: var(--dark-blue);
     border-radius: 15px;
 }
-.employee{
+.header .employee{
     background-color: #5746ea;
     display: flex;   
     align-items: center;
@@ -49,17 +51,69 @@ span{
     border: 2px solid #fff;
     border-radius: 50%;
 }
-.title{
+.header .title{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: .2rem;
 }
-.timeline{
+.header .timeline{
     display: flex;
     justify-content: space-around;
 }
 .timeline h2{
     color: var(--desaturated-blue);
     font-weight: 300;
+}
+.activity{
+    background-color: var(--light-red-work);
+    border-radius: 15px;
+    position: relative;
+    padding-top: 1.7rem;
+    z-index: 0;
+    overflow: hidden;
+}
+.activity .icon{
+    width: 60px;
+    position: absolute;
+    top: -10px;
+    z-index: -1;
+    right: 15px;
+    
+}
+.activity .work{
+    background-color: var(--dark-blue);
+    border-radius: 15px;
+    padding: 1rem 1rem 2rem;
+}
+.work .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title h2{
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    
+}
+.title img{
+    width: 20px;
+    height: auto;
+}
+.work .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content h3{
+    color: #fff;
+    font-weight: 300;
+    margin: 0;
+    font-size: 1.5rem;
+}
+.content p{
+    color: var(--pale-blue);
+    margin: 0;
+    
 }
