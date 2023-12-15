@@ -4,9 +4,11 @@ export default function Heading() {
   return (
     <div className="header">
       <div className="employee">
-        <img src="./images/image-jeremy.png" alt="employee-avatar" width={40} />
+        <img src="./images/image-jeremy.png" alt="employee-avatar" />
+        <div className="title">
         <span>Report for</span>
         <h1>Jeremy Robson</h1>
+        </div>
       </div>
       <div className="timeline">
         <h2>Daily</h2>
