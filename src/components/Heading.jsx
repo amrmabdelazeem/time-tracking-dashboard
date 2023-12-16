@@ -12,10 +12,10 @@ export default function Heading({onHandle}) {
         </div>
       </div>
       <div className="timeline">
-        <h2 title="daily" onClick={(e)=> onHandle(e.target.title)}>Daily</h2>
-        <h2 title="weekly" onClick={(e)=> onHandle(e.target.title)}>Weekly</h2>
-        <h2 title="monthly" onClick={(e)=> onHandle(e.target.title)}
-        >Monthly</h2>
+        <button title="daily" onClick={(e)=> onHandle(e.target.title)}>Daily</button>
+        <button title="weekly" onClick={(e)=> onHandle(e.target.title)}>Weekly</button>
+        <button title="monthly" onClick={(e)=> onHandle(e.target.title)}
+        >Monthly</button>
       </div>
     </div>
   );

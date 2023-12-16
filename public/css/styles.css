@@ -61,10 +61,17 @@ span{
     display: flex;
     justify-content: space-around;
 }
-.timeline h2{
+.timeline button{
     color: var(--desaturated-blue);
     font-weight: 300;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+.timeline button:focus{
+    color: #fff;
 }
 .activity{
     background-color: var(--light-red-work);
