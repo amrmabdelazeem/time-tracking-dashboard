@@ -1,6 +1,7 @@
 import React from "react";
 
-export default function Heading() {
+export default function Heading({onHandle}) {
+
   return (
     <div className="header">
       <div className="employee">
@@ -11,9 +12,10 @@ export default function Heading() {
         </div>
       </div>
       <div className="timeline">
-        <h2>Daily</h2>
-        <h2>Weekly</h2>
-        <h2>Monthly</h2>
+        <h2 title="daily" onClick={(e)=> onHandle(e.target.title)}>Daily</h2>
+        <h2 title="weekly" onClick={(e)=> onHandle(e.target.title)}>Weekly</h2>
+        <h2 title="monthly" onClick={(e)=> onHandle(e.target.title)}
+        >Monthly</h2>
       </div>
     </div>
   );

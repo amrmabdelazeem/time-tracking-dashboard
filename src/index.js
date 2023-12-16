@@ -8,3 +8,8 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+
+
+// 1- Loop the timeframes and return only the one that is needed
+// 2- find a way to pass the clicked timeline element to the main app for -1
