@@ -1,11 +1,24 @@
 import React from "react";
-import ActivityHeader from "./ActivityHeader";
+import workIcon from "../images/icon-work.svg";
+import playIcon from "../images/icon-play.svg";
+import studyIcon from "../images/icon-study.svg";
+import exerciseIcon from "../images/icon-exercise.svg";
+import socialIcon from "../images/icon-social.svg";
+import selfCareIcon from "../images/icon-self-care.svg";
 
+const icons = [
+  workIcon,
+  playIcon,
+  studyIcon,
+  exerciseIcon,
+  socialIcon,
+  selfCareIcon,
+];
 
-export default function Activity({title, current, previous}) {
+export default function Activity({ title, current, previous, id }) {
   return (
     <div className="activity">
-    <ActivityHeader name={title}/>
+      <img className="icon" src={icons[id]} alt="activity" />
       <div className="work">
         <div className="title">
           <h2>{title}</h2>

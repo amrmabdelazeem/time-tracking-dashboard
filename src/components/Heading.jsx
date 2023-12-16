@@ -1,11 +1,12 @@
 import React from "react";
+import avatar from "../images/image-jeremy.png";
 
 export default function Heading({onHandle}) {
 
   return (
     <div className="header">
       <div className="employee">
-        <img src="./images/image-jeremy.png" alt="employee-avatar" />
+        <img src={avatar} alt="employee-avatar" />
         <div className="title">
         <span>Report for</span>
         <h1>Jeremy Robson</h1>
