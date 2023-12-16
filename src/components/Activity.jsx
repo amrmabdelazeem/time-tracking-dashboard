@@ -15,7 +15,7 @@ export default function Activity({title, current, previous}) {
           <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" />
         </div>
         <div className="content">
-          <h3>{current}</h3>
+          <h3>{current}hrs</h3>
           <p>Last Week - {previous}hrs</p>
         </div>
       </div>
