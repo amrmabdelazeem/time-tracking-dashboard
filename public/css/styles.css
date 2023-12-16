@@ -15,6 +15,7 @@
 body{
     margin: 0;
     font-family: 'Rubik', sans-serif;
+    background-color: var(--very-dark-blue);
 }
 h1{
     color: #fff;
@@ -22,13 +23,11 @@ h1{
     margin: 0;
     font-size: 1.8rem;
 }
-
 span{
     color: var(--pale-blue);
     font-weight: 300;
 }
 .container{
-    background-color: var(--very-dark-blue);
     padding: 4rem 1rem;
     display: grid;
     gap: 1.5rem;
@@ -124,4 +123,76 @@ span{
     color: var(--pale-blue);
     margin: 0;
     
+}
+@media (min-width:1440px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 220px 250px 250px 250px;
+    }
+    .header{
+        grid-area: 1/ 1/ span 2;   
+    }
+    h1{
+        font-size: 2.2rem;
+    }
+    .header .employee{
+        flex-direction: column;
+        align-items: start;
+        padding-bottom: 5rem;
+    }
+    .employee img{
+        width: 70px;
+        margin-bottom: 1rem;
+    }
+    .header .timeline{
+        flex-direction: column;
+        align-items: start;
+        padding-left: 1.5rem;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+        gap: 1rem;
+    }
+    .header button{
+        margin: .5rem 0;
+    }
+    .header button:hover{
+        color: #fff;
+    }
+    .activity .work{
+        padding: 1.5rem;
+    }
+    .activity .work:hover{
+        cursor: pointer;
+        filter: brightness(150%);
+    }
+    .work .content{
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+    }
+    .content h3{
+        font-size: 3rem;
+
+    }
+    .title h2{
+        font-weight: 400;
+    }
+    .activity{
+        padding-top: 3rem;
+    }
+    .activity .icon{
+        width: 80px;
+    }
+    .activity:nth-child(5) .icon{
+        top: 0;
+    }
+    .title img{
+        cursor: pointer;
+    }
 }
