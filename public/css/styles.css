@@ -64,6 +64,7 @@ span{
 .timeline h2{
     color: var(--desaturated-blue);
     font-weight: 300;
+    cursor: pointer;
 }
 .activity{
     background-color: var(--light-red-work);
