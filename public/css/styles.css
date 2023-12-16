@@ -74,13 +74,13 @@ span{
     color: #fff;
 }
 .activity{
-    background-color: var(--light-red-work);
     border-radius: 15px;
     position: relative;
     padding-top: 1.7rem;
     z-index: 0;
     overflow: hidden;
 }
+
 .activity .icon{
     width: 60px;
     position: absolute;
