@@ -10,43 +10,27 @@ export default function App() {
   function handleTime(childTime){
     setTime(childTime);
   }
+
+  const getTimeFrame = (item, timeframe) =>({
+    key:timeframe,
+    current: item.timeframes[timeframe].current,
+    previous: item.timeframes[timeframe].previous
+  })
+
   return (
     <div className="container">
       <Heading onHandle={handleTime}/>
       {data.map((item, index)=> {
-        if(time === "daily"){
-          return (
+        const timeframeData = getTimeFrame(item, time);
+        return (
           <Activity
             key={index}
             id={index}
             title={item.title}
-            current={item.timeframes.daily.current}
-            previous={item.timeframes.daily.previous}
+            current={timeframeData.current}
+            previous={timeframeData.previous}
           />
         );
-        }else if(time=== "monthly"){
-          return (
-          <Activity
-            key={index}
-            id={index}
-            title={item.title}
-            current={item.timeframes.monthly.current}
-            previous={item.timeframes.monthly.previous}
-          />
-        );
-        }else if(time==="weekly"){
-          return (
-          <Activity
-            key={index}
-            id={index}
-            title={item.title}
-            current={item.timeframes.weekly.current}
-            previous={item.timeframes.weekly.previous}
-          />
-        );
-        }else{
-          return null;
-        }
       })}
     </div>
   );
